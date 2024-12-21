@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: woodstock
+      POSTGRES_PASSWORD: abc123
+      POSTGRES_DB: nestdb
+    ports:
+      - "5499:5432"
